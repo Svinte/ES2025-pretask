@@ -37,7 +37,7 @@ jobs:
         run: |
           # Esimerkiksi, jos käytät npm:ää ja build-komentoa
           npm install
-          npm run build
+          npm run prod
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
