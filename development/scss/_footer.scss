@@ -1,0 +1,62 @@
+footer
+{
+    color: #ddd;
+    padding: 2rem 2rem;
+    background-color: #1c211b;
+    background-image: linear-gradient(100deg, #1c211b, transparent);
+    border-top: 2px solid #32642a;
+    box-shadow: 0 -0.5rem 1rem #0007;
+
+    p
+    {
+        margin: 0;
+    }
+
+    a
+    {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    ul
+    {
+        list-style-type: circle;
+
+        li
+        {
+            padding: 0.2rem;
+        }
+    }
+}
+
+.footer
+{
+    &__section
+    {
+        justify-content: center;
+    
+        &--split
+        {
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10%;
+        }
+
+        &--icons
+        {
+            margin: 3rem auto;
+
+            a
+            {
+                border-bottom: 0.1rem dotted #fff;
+                padding: 10px;
+            }
+        }
+
+        section
+        {
+            margin-top: 2rem;
+        }
+    }
+}

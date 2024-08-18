@@ -1,0 +1,25 @@
+header
+{
+    @media screen and (max-width: 550px)
+    {
+        height: max-content;
+        display: block;
+
+        nav
+        {
+            display: block;
+            padding-bottom: 1rem;
+
+            ul
+            {
+                display: block;
+                list-style: circle;
+
+                li
+                {
+                    padding: 0.2rem;
+                }
+            }
+        }
+    }
+}

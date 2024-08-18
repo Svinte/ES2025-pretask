@@ -1,0 +1,22 @@
+@import "header.min";
+
+.main__content
+{
+    background-color: red;
+    &__half
+    {
+        @media screen and (max-width: 550px) {
+            flex-wrap: wrap;
+
+            &--inner-1
+            {
+                order: 1;
+            }
+
+            &--inner
+            {
+                order: 2;
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+@import "_body";
+@import "_footer";
+@import "_header";
+@import "_icons";
+
+h1
+{
+    color: green;
+    margin-top: 3rem;
+    font-size: 2.2rem;
+    text-align: center;
+    font-style: oblique;
+}
+
+h2
+{
+    color: green;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-style: oblique;
+}
+
+h3
+{
+    color: green;
+    margin-top: 1rem;
+    font-size: 1.35rem;
+    font-style: oblique;
+}
+
+p, li
+{
+    font-size: 1.2rem;
+}
+
+a
+{
+    color: green;
+    font-size: 1.2rem;
+}
+
+hr
+{
+    width: 100%;
+    height: 1px;
+    border: none;
+    margin: 5rem auto 3rem;
+    background-color: #333;
+}
+
+main
+{
+    margin: 5rem auto 10rem;
+    width: min(95%, 100rem);
+    min-height: 65vh;
+
+    img
+    {
+        height: auto;
+        margin: auto;
+        display: block;
+        width: min(100%, 60rem);
+    }
+}
+
+.main__content
+{
+    &__text-center
+    {
+        text-align: center;
+    }
+
+    &__left
+    {
+        display: block;
+        width: max-content;
+        margin-right: auto;
+    }
+
+    &__right
+    {
+        display: block;
+        margin-left: auto;
+        width: max-content;
+    }
+
+    &__half
+    {
+        gap: 1rem;
+        display: flex;
+        align-items: center;
+
+        &--inner
+        {
+            max-width: 65%;
+        }
+    }
+
+    &__note
+    {
+        width: max-content;
+        margin-top: 2.5rem;
+        border-radius: 5rem 1rem;
+        background-color: #5e695b;
+        padding: 1rem 1rem 2rem 3rem;
+
+        &, p, li, h1, h2, h3
+        {
+            color: #fff;
+        }
+    }
+
+    &__note--reverse
+    {
+        width: max-content;
+        margin-top: 2.5rem;
+        border-radius: 1rem 5rem;
+        background-color: #5e695b;
+        padding: 1rem 1rem 2rem 3rem;
+
+        p, li, h1, h2, h3
+        {
+            color: #fff;
+        }
+    }
+
+    &__underline
+    {
+       text-decoration: underline #6c63ff 2px;
+    }
+}

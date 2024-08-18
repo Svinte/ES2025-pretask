@@ -1,0 +1,15 @@
+.icon
+{
+    height: 2.5rem;
+
+    &--white
+    {
+        filter: invert(1);
+    }
+
+    &__text
+    {
+        display: inline;
+        vertical-align: 1rem;
+    }
+}

@@ -1,0 +1,59 @@
+@keyframes slide-in-right
+{
+    0%
+    {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left
+{
+    0%
+    {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in
+{
+    &--right
+    {
+        opacity: 0;
+        animation: slide-in-right 1s ease-out forwards;
+    }
+    
+    &--left
+    {
+        opacity: 0;
+        animation: slide-in-left 1s ease-out forwards;
+    }
+}
+
+@keyframes lazy-spin
+{
+    0%
+    {
+        rotate: 360deg;
+    }
+    26%
+    {
+        rotate: 0deg;
+    }
+}
+
+.header__logo
+{
+    animation: lazy-spin 7s infinite;
+}
