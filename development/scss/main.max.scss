@@ -1,2 +1,13 @@
 @import "animations.max";
 @import "header.max";
+
+.main__content
+{
+    &__half
+    {
+        &--inner
+        {
+            max-width: 65%;
+        }
+    }
+}

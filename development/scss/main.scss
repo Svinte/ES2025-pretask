@@ -90,11 +90,6 @@ main
         gap: 10%;
         display: flex;
         align-items: center;
-
-        &--inner
-        {
-            max-width: 65%;
-        }
     }
 
     &__note
@@ -104,6 +99,7 @@ main
         border-radius: 5rem 1rem;
         background-color: #5e695b;
         padding: 1rem 1rem 2rem 3rem;
+        max-width: 75vw;
 
         &, p, li, h1, h2, h3
         {
@@ -113,16 +109,7 @@ main
 
     &__note--reverse
     {
-        width: max-content;
-        margin-top: 2.5rem;
         border-radius: 1rem 5rem;
-        background-color: #5e695b;
-        padding: 1rem 1rem 2rem 3rem;
-
-        p, li, h1, h2, h3
-        {
-            color: #fff;
-        }
     }
 
     &__underline
