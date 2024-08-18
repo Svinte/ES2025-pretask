@@ -31,10 +31,6 @@ jobs:
       - name: Build project
         run: npm run prod
 
-      - name: Adjust base path in HTML files
-        run: |
-          find ./public -name '*.html' -exec sed -i 's|<base href="/">|<base href="/ES2025-pretask/">|g' {} +
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
